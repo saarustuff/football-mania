@@ -79,12 +79,12 @@ body {
 .blog-nav {
     margin-left: 100px;
     width: 252px;
-    height: 25%;
+    height: 30%;
     background-color: #161616;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     
 }
@@ -93,17 +93,18 @@ body {
 }
 
 .blog-nav p {
-    margin: 15px 0;
     width: 180px;
-    height: 20px;
+    margin: 0;
+    margin-bottom: 20px;
     color: black;
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     font-weight: 500;
     background-color: white;
     border-radius: 5px;
     text-align: center;  
 }
+
 .upcoming-match:hover {
     background: #DD0000;
     color: white;
@@ -111,6 +112,7 @@ body {
 #blog {
     background-color: #DD0000;
     color: white;
+    margin-bottom: 0;
 }
 
 /* --------------------
@@ -152,7 +154,6 @@ body {
     margin-left: 20px;
     font-size: 18px;
     font-weight: 600;
-    /* letter-spacing: 1px; */
 }
 .blog-footer {
     display: flex;
@@ -173,14 +174,17 @@ body {
     padding-right: 3px;
 }
 
+/* ------------------------------
+            blogs finish
+------------------------------ */
 
 
-/* footer */
+
+/* -----------footer----------- */
 footer {
     margin-top: 100px;
     padding-bottom: 30px;
     width: 100%;
-    /* height: 400px; */
     color: white;
     background-color: #161616;
     text-align: center;
@@ -206,7 +210,6 @@ footer a {
 .footer-text {
     display: flex;
     justify-content: center;
-    /* padding-left: 100px; */
 }
 .footer-text p {
     font-size: 16px;
@@ -218,3 +221,130 @@ footer a {
 footer p:hover {
     color: #DD0000;
 }
+/* -----------footer finish----------- */
+
+/* |||||||||||||||||||||||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||| */
+
+/* -------------Responsive------------- */
+
+@media only screen and (max-width: 820px) {
+    .banner {
+        width: 720px;
+        
+    }
+    .banner-speech {
+        margin-left: 30px;
+    }
+    .banner-speech h1 {
+        font-size: 30px;
+    }
+    .banner-speech p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .button p {
+        width: 30%;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .button iconify-icon {
+        margin-bottom: -3px;
+    }
+
+    .banner .banner-img img {
+        width: 400px;
+        height: 550px;
+        right: 20px;
+        top: 50px;
+    }
+    /* --------------top banner finish-----------*/
+    
+    /* -----------mid article------------ */
+    .mid-section {
+        display: block;
+    }
+    .blog-nav {
+        width: auto;
+        margin-left: 0;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+
+    }
+    .blog-nav p {
+        margin: 0px 20px;
+        box-shadow: 1px 1px 10px rgba(146, 113, 223, 0.267);
+        border: 1px solid rgba(143, 137, 137, 0.304);
+        border-radius: 10px;
+    }
+   
+    /* --------------------
+            blogs
+    -------------------- */
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
+        justify-items: center;
+        justify-content: center;
+    }
+    .blog {
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+    .blog>img {
+        width:100% ;
+        overflow: hidden;
+    }
+    .blog-caption {
+        font-size: 23px;
+    }
+    
+    /* ------------------------------
+            blogs finish
+    ------------------------------ */
+
+     /* -----------footer----------- */
+    .footer-text p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+        color: #b9b9b9;
+        padding: 0 20px;
+
+    }
+    
+    
+}
+
+/* FOR 800PX */
+/* @media only screen and (max-width: 480px) {
+    .banner {
+        height: 90vh;
+        flex-direction: column-reverse;
+    }
+    .banner-text {
+        width: 100%;
+    }
+    .banner-img {
+        width: 100%;
+    }
+} */
+
+/* FOR 500PX */
+/* @media only screen and (max-width: 500px) {
+    .banner-text {
+        height: 70%;
+        padding: 25px;
+    }
+    .banner-title > h1 {
+        font-size: 1.5rem;
+    }
+    .banner-img {
+        height: 30%;
+    }
+} */
