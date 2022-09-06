@@ -77,7 +77,7 @@ body {
     column-gap: 50px;
 }
 .blog-nav {
-    margin-left: 100px;
+    margin-left: 110px;
     width: 252px;
     height: 30%;
     background-color: #161616;
@@ -455,8 +455,15 @@ footer p:hover {
         font-weight: 500;
         padding-left: 0px;
     }
-    
-
+    /* ---------footer finish--------- */
 }
+
+/* -----------Responsive finish----------- */
+
+/*=============================================== 
+------------ All-section-finish -----------------
+================================================*/
+
+
 
 
