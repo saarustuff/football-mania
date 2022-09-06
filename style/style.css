@@ -204,7 +204,6 @@ footer a {
 .hr {
     margin: 50px 0;
     border: 1px solid rgba(148, 138, 138, 0.288);
-    /* width: 1000px;  */
 
 }
 .footer-text {
@@ -228,16 +227,21 @@ footer p:hover {
 
 /* -------------Responsive------------- */
 
+/* For Pad/Tablet */
+
 @media only screen and (max-width: 820px) {
     .banner {
         width: 720px;
+        height: 500px;
         
     }
     .banner-speech {
         margin-left: 30px;
     }
     .banner-speech h1 {
-        font-size: 30px;
+        margin-top:0 ;
+        margin-bottom: 0;
+        font-size: 50px;
     }
     .banner-speech p {
         font-size: 10px;
@@ -254,10 +258,11 @@ footer p:hover {
     }
 
     .banner .banner-img img {
+        position: absolute;
         width: 400px;
-        height: 550px;
-        right: 20px;
-        top: 50px;
+        height: 400px;
+        right: 40px;
+        top: 130px;
     }
     /* --------------top banner finish-----------*/
     
@@ -315,36 +320,133 @@ footer p:hover {
         line-height: 25px;
         color: #b9b9b9;
         padding: 0 20px;
-
     }
     
     
 }
 
-/* FOR 800PX */
-/* @media only screen and (max-width: 480px) {
+/* For Mobile */
+@media only screen and (max-width: 500px) {
+   
     .banner {
-        height: 90vh;
-        flex-direction: column-reverse;
+        display: block;
+        height: 600px;
+        width: 400px;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
     }
-    .banner-text {
-        width: 100%;
+    .banner-speech {
+        margin-left: 0;
+        text-align: center;
+    }
+    .banner-speech>h1 {
+        font-size: 30px;
+        padding: 70px;
+        padding-bottom: 0;
+    }
+    .banner-speech>p {
+        margin-top: 20px;
+        padding-top: 0;
+    }
+    .button{
+        justify-content: center;
+        display: flex;
+    }
+    .button p {
+        font-size: 30px;
+        width: auto;
+    }
+    .button iconify-icon {
+        margin-bottom: -5px;
     }
     .banner-img {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
-} */
+    .banner > .banner-img>img {
+        width: 300px;
+        height: 300px;
+        top: 11.5px; 
 
-/* FOR 500PX */
-/* @media only screen and (max-width: 500px) {
-    .banner-text {
-        height: 70%;
-        padding: 25px;
     }
-    .banner-title > h1 {
-        font-size: 1.5rem;
+    
+    /* --------------top banner finish-----------*/
+    
+    /* -----------mid article------------ */
+    .mid-section {
+        display: block;
     }
-    .banner-img {
-        height: 30%;
+    .blog-nav {
+        width: auto;
+        margin-left: 0;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+
     }
-} */
+    .blog-nav p {
+        width: auto;
+        margin: 10px 0px;
+        padding: 10px 30px;
+    }
+
+    /* --------------------
+            blogs
+    -------------------- */
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-caption {
+        font-size: 25px;
+    }
+    .blog-footer {
+        font-size: 25px;
+    }
+    .blog-footer p {
+        margin-top: 0;
+    }
+    .blog iconify-icon {
+        margin-bottom: -4px;
+    }
+        
+    /* ------------------------------
+            blogs finish
+    ------------------------------ */
+    
+    /* -----------footer----------- */
+    footer {
+        margin-top: 50px;
+    }
+
+      .footer-text p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+        color: #b9b9b9;
+        padding: 0 20px;
+    }
+    footer h1{
+        font-size: 20px;
+        padding-top: 50px;
+    }
+    .hr {
+        margin: 20px 25px ;
+        margin-bottom: 0 ;
+        border: 1px solid rgba(148, 138, 138, 0.288);
+    }
+    .footer-text {
+        display: flow-root;
+    }
+    .footer-text p {
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 0px;
+    }
+    
+
+}
+
+
