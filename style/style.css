@@ -325,9 +325,16 @@ footer p:hover {
     
 }
 
+/* |||||||||||||||||||||||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||| */
+
 /* For Mobile */
 @media only screen and (max-width: 500px) {
-   
+    .top-banner {
+        margin: 0 10px;
+        margin-top: 10px;
+
+    }
     .banner {
         display: block;
         height: 600px;
@@ -341,24 +348,27 @@ footer p:hover {
         text-align: center;
     }
     .banner-speech>h1 {
-        font-size: 30px;
+        font-size: 25px;
         padding: 70px;
         padding-bottom: 0;
     }
     .banner-speech>p {
         margin-top: 20px;
         padding-top: 0;
+        color: rgba(255, 255, 255, 0.8);
     }
     .button{
         justify-content: center;
         display: flex;
     }
     .button p {
-        font-size: 30px;
+        font-size: 15px;
         width: auto;
+        padding: 10px 20px;
+
     }
     .button iconify-icon {
-        margin-bottom: -5px;
+        margin-bottom: -auto;
     }
     .banner-img {
         display: flex;
@@ -368,7 +378,7 @@ footer p:hover {
     .banner > .banner-img>img {
         width: 300px;
         height: 300px;
-        top: 11.5px; 
+        top: 53px; 
 
     }
     
